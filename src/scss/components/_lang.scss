@@ -1,0 +1,31 @@
+.lang{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.5;
+    @include breakpoint(medium down){
+        margin-top: 28px;
+    }
+    @include breakpoint(small down){
+        margin-top: 20px;
+    }
+    li{
+        &.active a{
+            opacity: 1;
+        }
+        & + li {
+            margin-left: 24px;
+        }
+    }
+    a {
+        opacity: 0.65;
+        color: $white;
+        // color: $secondary;
+        transition: opacity 250ms;
+        &:hover, &:focus{
+            opacity: 0.9;
+        }
+    }
+}

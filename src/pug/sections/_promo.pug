@@ -1,13 +1,29 @@
+-
+    const promo = {
+        header: {
+            en: 'Double Ripple is a novel, innovative platform using algorithmic trading to double your ripple over time',
+            kr: '',
+            cn: ''
+        },
+        button: {
+            en: 'Download Android App',
+            kr: '',
+            cn: ''
+        }
+    }
+
 section.promo
     .container.promo_container
-        .promo_logo
-            img(src="./assets/img/logo.svg", alt="Double Rripple")
+        .promo_top
+            .promo_logo
+                img(src="/assets/img/logo.svg", alt="Double Rripple")
+            +lang
         .promo_content
             h1.promo_lead
-                | Double Ripple is a novel, innovative platform using algorithmic trading to double your ripple over time
+                =promo.header[lang]
             .promo_buttons
                 a.button.light(href="#" download)
-                    | Download Android App
+                    =promo.button[lang]
         .promo_screens
-            img(srcset="./assets/img/screens/invested@2x.png 2x, ./assets/img/screens/invested.png 1x" src="./assets/img/screens/invested.png", alt="Invested")
-            img(srcset="./assets/img/screens/deposit@2x.png 2x, ./assets/img/screens/deposit.png 1x" src="./assets/img/screens/deposit.png", alt="Deposit")
+            img(srcset="/assets/img/screens/invested@2x.png 2x, /assets/img/screens/invested.png 1x" src="/assets/img/screens/invested.png", alt="Invested")
+            img(srcset="/assets/img/screens/deposit@2x.png 2x, /assets/img/screens/deposit.png 1x" src="/assets/img/screens/deposit.png", alt="Deposit")

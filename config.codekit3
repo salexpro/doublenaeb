@@ -68,6 +68,12 @@
 		"oAP": "/docs/CNAME",
 		"oF": 0
 		},
+	"/docs": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/docs/docs",
+		"oF": 0
+		},
 	"/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
@@ -492,6 +498,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/components/_lang.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_lang.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/components/_menu.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -522,14 +538,34 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/index.pug": {
+	"/src/pug/pages/cn.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/cn/index.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"/src/pug/pages/en.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/docs/index.html",
-		"oF": 0,
+		"oF": 2,
+		"oS": 0
+		},
+	"/src/pug/pages/kr.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/kr/index.html",
+		"oF": 2,
 		"oS": 0
 		},
 	"/src/pug/sections/_benefits.pug": {
@@ -559,16 +595,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/_footer.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"/src/pug/sections/_header.pug": {
-		"cB": 1,
-		"cOD": 0,
-		"ft": 512,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/_header.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -643,6 +669,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/src/scss/components/_lang.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/docs/scss/css/_lang.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -747,9 +786,9 @@
 	"creationDate": 505831586,
 	"displayValue": "DoubleRipple",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-doge",
+	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 613584408.88488805
+	"lastBuiltDate": 613597666.77701795
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

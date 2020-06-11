@@ -15,13 +15,13 @@
         grid-template-columns: 1fr auto;
         column-gap: 80px;
         row-gap: 85px;
-        grid-template-areas: 'logo screen'
+        grid-template-areas: 'top screen'
                              'content screen';
         @include breakpoint(medium down){
             grid-template-columns: auto;
             justify-items: center;
             row-gap: 50px;
-            grid-template-areas: 'logo'
+            grid-template-areas: 'top'
                                  'screen'
                                  'content';
         }
@@ -29,14 +29,22 @@
             row-gap: 40px;
         }
     }
-    &_logo{
-        grid-area: logo;
+    &_top{
+        grid-area: top;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         @include breakpoint(medium down){
             margin-bottom: 10px;
+            flex-direction: column;
         }
         @include breakpoint(small down){
-            max-width: 240px;
             margin: 0;
+        }
+    }
+    &_logo{
+        @include breakpoint(small down){
+            max-width: 240px;
         }
     }
     &_content{

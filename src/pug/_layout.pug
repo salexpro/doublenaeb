@@ -6,10 +6,10 @@ block const
 
 //- Components
 include components/_icons
-//- include components/_menu
+include components/_lang
 
 doctype html
-html(lang="en")
+html(lang=lang)
     include components/_head
     body
         main.off-canvas-content.wrap(data-off-canvas-content)
@@ -19,4 +19,4 @@ html(lang="en")
             //- include components/_popup
         //- include components/_offcanvas
         block js
-            script(src="./js/app.min.js")
+            script(src="/js/app.min.js")

@@ -2,15 +2,27 @@
     const benefits = [
         {
             icon: 'connection',
-            title: 'Double Ripple utilizes a special Singapore-based P2P Trading platform to manage your XRP'
+            title: {
+                en: 'Double Ripple utilizes a special Singapore-based P2P Trading platform to manage your XRP',
+                kr: '',
+                cn: ''
+            }
         },
         {
             icon: 'algorithm',
-            title: 'Double Ripple utilizes a special Singapore-based P2P Trading platform to manage your XRP'
+            title: {
+                en: 'Double Ripple utilizes a special Singapore-based P2P Trading platform to manage your XRP',
+                kr: '',
+                cn: ''
+            }
         },
         {
             icon: 'binary',
-            title: 'Team is preparing proprietary algorithm to implement other cryptocurrencies'
+            title: {
+                en: 'Team is preparing proprietary algorithm to implement other cryptocurrencies',
+                kr: '',
+                cn: ''
+            }
         },
     ]
 
@@ -22,4 +34,4 @@ section.benefits
                     .benefits_item_icon
                         +icon(item.icon, [128, 128], 'none')
                     h3.benefits_item_title
-                        =item.title
+                        =item.title[lang]
