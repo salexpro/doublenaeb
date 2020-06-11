@@ -3,17 +3,55 @@
     background: linear-gradient(91.98deg, #FF905E 0%, #FF7088 100%);
     padding-top: 63px;
     padding-bottom: 76px;
+    @include breakpoint(medium down){
+        padding-top: 30px;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+    @include breakpoint(small down){
+        background: linear-gradient(91.98deg, #ff856d 0%, #ff7b7a 100%);
+        padding-bottom: 64px;
+    }
     &_top{
         font-weight: 500;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 70px;
+        @include breakpoint(medium down){
+            display: block;
+        }
+        @include breakpoint(small down){
+            margin-bottom: 60px;
+        }
+    }
+    &_logo{
+        @include breakpoint(small down){
+            max-width: 240px;
+            margin: auto;
+        }
+    }
+    &_copyright{
+        @include breakpoint(medium down){
+            margin-top: 50px;
+        }
+        @include breakpoint(small down){
+            margin-top: 44px;
+            font-size: 14px;
+            line-height: 1.72;
+        }
     }
     &_disclaimer{
         display: grid;
         grid-template-columns: auto 1fr;
         column-gap: 60px;
+        @include breakpoint(medium down){
+            grid-template-columns: auto;
+            row-gap: 15px;
+        }
+        @include breakpoint(small down){
+            font-size: 14px;
+        }
         &_header{
             font-weight: 500;
         }

@@ -1,6 +1,9 @@
 .cta{
     background: #FFEFE7;
     background-image: linear-gradient(180deg, #ffe0d7 25%, #ffefe7 50%, #FFDCCD 60%);
+    @include breakpoint(small down){
+        background-image: linear-gradient(180deg, #ffe0d7 30%, #ffefe7 50%, #FFDCCD 70%);
+    }
     &::before{
         content: '';
         width: 100%;
@@ -12,6 +15,11 @@
         padding-bottom: 9.73%;
         // margin-bottom: -2.92%;
         margin-bottom: -42px;
+        min-height: 116px;
+        background-position: bottom center;
+        @include breakpoint(medium down){
+            margin: 0;
+        }
     }
     &::after{
         content: '';
@@ -25,19 +33,39 @@
         padding-bottom: 9.36%;
         // margin-top: -1.8%;
         margin-top: -25px;
+        min-height: 112px;
+        @include breakpoint(medium down){
+            margin: 0;
+        }
     }
     &_container{
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: center;
+        @include breakpoint(medium down){
+            padding-top: 64px;
+            padding-bottom: 85px;
+            display: block;
+            text-align: center;
+        }
+        @include breakpoint(small down){
+            padding-top: 36px;
+            padding-bottom: 20px;
+        }
     }
     &_header{
         color: #ff8869;
         margin-bottom: 58px;
+        @include breakpoint(medium down){
+            margin-bottom: 40px;
+        }
     }
     &_screen{
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
         border-radius: 8px;
         overflow: hidden;
+        @include breakpoint(medium down){
+            display: none;
+        }
     }
 }
