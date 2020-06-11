@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs/>
     <symbol id="connection" viewBox="0 0 128 128">
         <path fill="#FF8869" d="M42 128c23.196 0 42-18.804 42-42S65.196 44 42 44 0 62.804 0 86s18.804 42 42 42z" opacity=".4"/>
         <path stroke="#2B3136" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M48 48h4m4 0h4m4 0h4m-8 32h4m4 0h4m4 0h4m-8-32h28M28 80h28m-26 8v16L2 76l28-28v16h68v16l28-28-28-28v16"/>

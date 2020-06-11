@@ -8,10 +8,10 @@ html, body{
     height: 5px;
 }
 ::-webkit-scrollbar-thumb {
-    background: $primary-color;
+    background: darken(#ff7581, 5);
     border-radius: 5px;
     &:hover{
-        background: darken($primary-color, 15);
+        background: darken(#ff7581, 10);
     }
 }
 
@@ -34,7 +34,13 @@ html, body{
     min-height: 100vh;
 }
 
-a{
+.container{
+    max-width: 1040px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+a {
     transition: color 200ms;
 }
 

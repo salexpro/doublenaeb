@@ -1,0 +1,33 @@
+.promo{
+    background: linear-gradient(90.9deg, #FF905E 0%, #FF7088 100%);
+    padding-top: 80px;
+    padding-bottom: 106px;
+    &_container{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        column-gap: 80px;
+    }
+    &_lead{
+        margin-top: 85px;
+    }
+    &_buttons{
+        margin-top: 80px;
+    }
+    &_screens{
+        position: relative;
+        // padding-right: 40px;
+        // padding-bottom: 40px;
+        padding-left: 40px;
+        padding-top: 40px;
+        img{
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            border-radius: 8px;
+            &:first-child{
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
+            }
+        }
+    }
+}

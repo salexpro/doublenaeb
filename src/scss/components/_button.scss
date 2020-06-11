@@ -4,5 +4,21 @@ button {
 }
 
 .button{
-    
+    min-width: 280px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06), 0 2px 5px rgba(0, 0, 0, 0.12);
+    &.light{
+        color: $primary-color;
+        &:hover, &:focus{
+            background-color: $white;
+            color: darken($primary-color, 5);
+        }
+    }
+    &.primary{
+        background: linear-gradient(92.12deg, #FF905E 0%, #FF7088 100%);
+        color: $white;
+        &:hover, &:focus{
+            color: lighten($primary-color, 20);
+        }
+    }
 }

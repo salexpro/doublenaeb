@@ -1,3 +1,21 @@
 .footer{
     margin-top: auto;
+    background: linear-gradient(91.98deg, #FF905E 0%, #FF7088 100%);
+    padding-top: 63px;
+    padding-bottom: 76px;
+    &_top{
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    &_disclaimer{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 60px;
+        &_header{
+            font-weight: 500;
+        }
+    }
 }
