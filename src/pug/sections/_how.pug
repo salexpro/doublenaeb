@@ -1,0 +1,101 @@
+-
+    const structure = {
+        block: [
+            {
+                title: 'Executive',
+                sum: '70,000 XRP',
+                levels: [
+                    [40, 20],
+                    [20, 10],
+                    [10, 5],
+                    [5, 2.5]
+                ]
+            },
+            {
+                title: 'Member',
+                sum: '4,550 XRP',
+                levels: [
+                    [10, 10],
+                    [5, 5],
+                    [],
+                    []
+                ]
+            }
+        ],
+        tree: [
+            [{
+                title: 'Executive ‘A’'
+            }],
+            [{
+                title: 'Executive ‘B’',
+                descr: `70,000 XRP 40%<br>
+                        to Executive ‘A’`
+            }, {
+                title: 'Member ‘C’',
+                descr: `4,550 XRP 20%<br>
+                        to Executive ‘A’`
+            }, {
+                title: 'Executive ‘C’',
+                descr: `70,000 XRP 40%<br>
+                        to Executive ‘A’`
+            }, {
+                title: 'Member ‘D’',
+                descr: `4,550 XRP 20%<br>
+                        to Executive ‘A’`
+            }],
+            [{
+                amount: 3,
+                descr: `4,550 XRP<br>
+                        20% to Executive ‘B’<br>
+                        10% to Executive ‘A’`
+            }, {
+                amount: 2,
+                descr: `4,550 XRP<br>
+                        10% to Executive ‘A’<br>
+                        10% to Member ‘C’`
+            }, {
+                amount: 3,
+                descr: `70,000 XRP<br>
+                        10% to Member ‘D’<br>
+                        20% to Executive ‘A’`
+            }]
+        ]
+    }
+
+section.how
+    .container.container--wide
+        h2.how_header
+            | How Double Ripple works
+        .how_block
+            each col in structure.block
+                .how_member(class=`how_member--${col.title.toLowerCase()}`)
+                    .how_member_icon
+                        +icon('user', [16, 16])
+                    p.how_member_title
+                        =col.title
+                    p.how_member_descr
+                        =col.sum
+                each level, i in col.levels
+                    ul.how_block_item(class=`how_block_item--${col.title.toLowerCase()} how_block_item--${col.title.toLowerCase()}-${i}`)
+                        each l, j in level
+                            li
+                                big
+                                    | #{l}%
+                                span
+                                    | commission for #{j % 2 === 0 ? 'executive' : 'member'} registration
+
+        .how_tree
+            each level in structure.tree
+                ul.how_tree_level
+                    each member in level
+                        .how_member.how_member--tree(class=member.title ? `how_member--${member.title.split(' ')[0].toLowerCase()}` : false)
+                            - const amount = member.amount || 1
+                            each icon in Array(amount)
+                                .how_member_icon
+                                    +icon('user', [16, 16])
+                            if member.title
+                                p.how_member_title
+                                    =member.title
+                            if member.descr
+                                p.how_member_descr
+                                    !=member.descr

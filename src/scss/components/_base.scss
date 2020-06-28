@@ -43,6 +43,10 @@ body {
     max-width: 1040px;
     padding: 0 40px;
     margin: auto;
+    &--wide{
+        max-width: 768px;
+        padding: 0 32px;
+    }
     @include breakpoint(small down) {
         padding: 0 20px;
     }

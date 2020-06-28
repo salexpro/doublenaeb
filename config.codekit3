@@ -552,7 +552,7 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
-		"hM": 0,
+		"hM": 1,
 		"oA": 0,
 		"oAP": "/docs/index.html",
 		"oF": 2,
@@ -595,6 +595,16 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/_footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_how.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_how.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -764,6 +774,19 @@
 		"oS": 3,
 		"sct": 1
 		},
+	"/src/scss/sections/_how.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/docs/scss/css/_how.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
 	"/src/scss/sections/_promo.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -788,7 +811,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 613597666.77701795
+	"lastBuiltDate": 614996663.561023
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

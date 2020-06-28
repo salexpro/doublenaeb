@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <symbol id="connection" viewBox="0 0 128 128">
-        <path fill="#FF8869" d="M42 128c23.196 0 42-18.804 42-42S65.196 44 42 44 0 62.804 0 86s18.804 42 42 42z" opacity=".4"/>
-        <path stroke="#2B3136" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M48 48h4m4 0h4m4 0h4m-8 32h4m4 0h4m4 0h4m-8-32h28M28 80h28m-26 8v16L2 76l28-28v16h68v16l28-28-28-28v16"/>
-        <path stroke="#2B3136" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M30 112v4l-.006-.148C39.758 122.268 51.444 126 64 126c34.242 0 62-27.758 62-62M98 16v-4l.006.148C88.242 5.732 76.556 2 64 2 29.758 2 2 29.758 2 64"/>
+    <symbol id="connection" viewBox="0 0 128 128" stroke="#2B3136" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round">
+        <path opacity="0.4" d="M64 102C84.9868 102 102 84.9868 102 64C102 43.0132 84.9868 26 64 26C43.0132 26 26 43.0132 26 64C26 84.9868 43.0132 102 64 102Z" fill="#FF8869" stroke-width="0"/>
+        <path d="M2 54C2 42.9543 10.9543 34 22 34H38C49.0457 34 58 42.9543 58 54V54C58 56.2091 56.2091 58 54 58H6C3.79086 58 2 56.2091 2 54V54Z"/>
+        <circle cx="30" cy="14" r="12"/>
+        <path d="M70 122C70 110.954 78.9543 102 90 102H106C117.046 102 126 110.954 126 122V122C126 124.209 124.209 126 122 126H74C71.7909 126 70 124.209 70 122V122Z"/>
+        <circle cx="98" cy="82" r="12"/>
+        <path d="M106 60V56M94 60V34H80V40L68 28L80 16M80 22H106V44M106 52V48"/>
+        <path d="M22 68V72M34 68V94H48V88L60 100L48 112M48 106H22V84M22 76V80"/>
     </symbol>
     <symbol id="algorithm" viewBox="0 0 128 128">
         <path fill="#FF8869" d="M128 64c0 22.09-17.908 40-40 40S48 86.09 48 64c0-22.102 17.908-40 40-40s40 17.898 40 40z" opacity=".4"/>
@@ -16,5 +20,9 @@
         <path fill="#FF8869" d="M86 84c23.196 0 42-18.804 42-42S109.196 0 86 0 44 18.804 44 42s18.804 42 42 42z" opacity=".4"/>
         <path stroke="#2B3136" stroke-miterlimit="10" stroke-width="2" d="M80 106l6 20m-14 0h20M66 30H2v96h64V30zM2 38h64M12 50h16m0 8h16m-32 0h12m0 24h16m-28 0h8m0-16h20m4 0h12m-36 8h28M20 90h12m4 0h20m-36 8h28m-28 8h20m4 0h12m-44 8h16m4 0h8m50-86v16m-16 4v16m0 4v16m8-16v16m8-16v16m24-16v16M98 28v16m0 4v16M82 40c0 1.106-.894 2-2 2h-4c-1.106 0-2-.894-2-2v-8c0-1.106.894-2 2-2h4c1.106 0 2 .894 2 2v8zm32 0c0 1.106-.894 2-2 2h-4c-1.106 0-2-.894-2-2v-8c0-1.106.894-2 2-2h4c1.106 0 2 .894 2 2v8zM90 60c0 1.106-.894 2-2 2h-4c-1.106 0-2-.894-2-2v-8c0-1.106.894-2 2-2h4c1.106 0 2 .894 2 2v8zm24 0c0 1.106-.894 2-2 2h-4c-1.106 0-2-.894-2-2v-8c0-1.106.894-2 2-2h4c1.106 0 2 .894 2 2v8zm-8 20c0 1.106-.894 2-2 2h-4c-1.106 0-2-.894-2-2v-8c0-1.106.894-2 2-2h4c1.106 0 2 .894 2 2v8z"/>
         <path stroke="#2B3136" stroke-miterlimit="10" stroke-width="2" d="M2 24v-4a2 2 0 012-2h120a2 2 0 012 2v84a2 2 0 01-2 2H72m54-12H72"/>
+    </symbol>
+    <symbol id="user" viewBox="0 0 16 16" fill="none" stroke="white">
+        <path d="M1 14C1 11.2386 3.23858 9 6 9H10C12.7614 9 15 11.2386 15 14V14C15 14.5523 14.5523 15 14 15H2C1.44772 15 1 14.5523 1 14V14Z"/>
+        <circle cx="8" cy="4" r="3"/>
     </symbol>
 </svg>
